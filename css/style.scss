@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  user-select: none;
+  background: #FCB23D;
+  font-family: Exo, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.slide__content{
+  margin: 0 0 700px 0;
+  z-index: 2;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+.slide__text{
+  padding: 0 50px;
+  max-width: 400px;
+}
+.slide__img{
+  height: 1920px;
+  width: 1080px;
+  position: fixed;
+}
+.slide__desc{
+}
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-prev,.swiper-button-next{
+    color: #FCB23D;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0;
+}
+.swiper-pagination{
+  border: 1px solid #FCB23D;
+}
+.swiper-pagination-bullet{
+  opacity: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  width: 200px;
+  line-height: 39px;
+  /* identical to box height, or 279% */
+  background-color: rgba(0,0,0,0);
+  color: #FCB23D;
+  margin: 0;
+  height: 39px;
+  border-radius: 0;
+}
+.pagination__text{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.swiper-pagination-bullet-active{
+  color: white;
+  background: #6F2A4A;
+}
+.swiper-slide img{
+  width: 100%;
+  height: 100vh;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+}
+.pagination-wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+.slide__title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+  /* identical to box height, or 130% */
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.slide__text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  /* or 127% */
+  color: #FFFFFF;
+}
+.slide__button{
+  background: #FCB23D;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 37px;
+  /* identical to box height, or 247% */
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.contact{
+  justify-content: space-between;
+  width: 1000px;
+  margin: 400px 0 0 0;
+}
+.slide__address{
+  max-width: 350px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.slide__contacts{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* or 120% */
+  text-align: right;
+  color: #FFFFFF;
+}
+.img__wrapper img{
+  position: absolute;
+  left: 30px;
+  top: 42px;
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 1400px){
+  .swiper-pagination-bullet{
+    width: 175px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1238px){
+  .swiper-pagination-bullet{
+    width: 155px;
+    font-size: 16px;
+  }
+  .img__wrapper img{
+    width: 180px;
+  }
+  .slide__content{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1090px){
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px;
+  }
+  .swiper-pagination{
+    display: flex;
+  }
+  .swiper-pagination-bullet{
+    font-size: 16px;
+    height: 15px;
+    background-color: #FCB23D;
+    padding: 0;
+    margin: 0;
+  }
+  .swiper-pagination-bullet-active{
+    color: white;
+    background: #6F2A4A;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: none;
+  }
+}
+@media screen and (max-width: 720px){
+  .slide__content{
+    margin: 0 0 400px 0;
+  }
+  .img__wrapper img{
+    left: 35%;
+  }
+}
+@media screen and (max-width: 440px){
+  .img__wrapper img{
+    left: 30%;
+  }
+}
