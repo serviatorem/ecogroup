@@ -31,7 +31,7 @@ body {
   position: absolute;
   top: 18%;
   width: 900px;
-  height: 500px;
+  height: 540px;
 }
 
 .slide__img {
@@ -153,7 +153,7 @@ body {
 .contact {
   justify-content: space-between;
   width: 1000px;
-  margin: 430px 0 0 0;
+  margin: 500px 0 0 0;
 }
 
 .slide__address {
@@ -238,7 +238,7 @@ body {
   }
   .contact {
     align-items: center;
-    margin: 480px 0 0 0;
+    margin: 600px 0 0 0;
     flex-direction: column;
   }
   .contact .slide__contacts {
