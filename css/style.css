@@ -6,7 +6,6 @@ body {
 }
 
 body {
-  user-select: none;
   background: #FCB23D;
   font-family: Exo, sans-serif;
   font-size: 14px;
@@ -26,6 +25,13 @@ body {
 .slide__text {
   padding: 0 50px;
   max-width: 400px;
+}
+
+.google {
+  position: absolute;
+  top: 18%;
+  width: 900px;
+  height: 500px;
 }
 
 .slide__img {
@@ -147,7 +153,7 @@ body {
 .contact {
   justify-content: space-between;
   width: 1000px;
-  margin: 400px 0 0 0;
+  margin: 430px 0 0 0;
 }
 
 .slide__address {
@@ -194,10 +200,16 @@ body {
   .slide__content {
     flex-direction: column;
   }
+  .contact {
+    flex-direction: row;
+  }
 }
 @media screen and (max-width: 1090px) {
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 0px;
+  }
+  .google {
+    width: 800px;
   }
   .swiper-pagination {
     display: flex;
@@ -221,11 +233,26 @@ body {
   .slide__content {
     margin: 0 0 400px 0;
   }
+  .google {
+    width: 720px;
+  }
+  .contact {
+    align-items: center;
+    margin: 480px 0 0 0;
+    flex-direction: column;
+  }
+  .contact .slide__contacts {
+    text-align: center;
+    max-width: 350px;
+  }
   .img__wrapper img {
     left: 35%;
   }
 }
 @media screen and (max-width: 440px) {
+  .google {
+    width: 440px;
+  }
   .img__wrapper img {
     left: 30%;
   }
