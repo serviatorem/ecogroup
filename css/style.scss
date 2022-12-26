@@ -240,3 +240,8 @@ body {
     left: 30%;
   }
 }
+@media screen and (max-width: 350px){
+  .img__wrapper img{
+    left: 20%;
+  }
+}
