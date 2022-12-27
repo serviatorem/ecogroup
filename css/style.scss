@@ -34,7 +34,7 @@ body {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  filter: brightness(40%);
+  filter: brightness(50%);
 }
 .swiper{
   width: 100%;
@@ -63,6 +63,11 @@ body {
 }
 .swiper-button-prev,.swiper-button-next{
     color: #FCB23D;
+  &:hover{
+    color: #6F2A4A;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.2);
+  }
 }
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
   margin: 0;
@@ -133,11 +138,10 @@ body {
   /* identical to box height, or 247% */
   color: #FFFFFF;
   cursor: pointer;
+  padding: 2px 5px;
   &:hover{
-    background-color: #FFFFFF;
-    color: #FCB23D;
-    filter: brightness(80%);
-    transition: 0.4s all ease-in-out;
+    background-color: #6F2A4A;
+    transition: 0.3s all ease-in-out;
   }
 }
 .contact{
